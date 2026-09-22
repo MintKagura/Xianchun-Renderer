@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.xianchun.renderer",
+  "version": "1.2.0",
+  "author": "矞 & 雪柳",
+  "license": "Apache-2.0",
+  "main": "dist/main.js",
+  "display_name": {
+    "zh": "衔春渲染器",
+    "en": "Xianchun Renderer",
+    "default": "Xianchun Renderer"
+  },
+  "description": {
+    "zh": "【衔春】对话内富文本渲染：轻量 Compose 卡片与 WebView 网页双通道，支持字号、行间距、字间距、竖排与对齐。七色配色预设可自定义，兼容单句语音与双语折叠。支持提示词一键自动注入与实时定制。",
+    "en": "【Xianchun】Rich content rendering in chat: lightweight Compose card & WebView channels. Typography controls, 7-color presets, bilingual fold, single-sentence TTS, and automatic prompt injection.",
+    "default": "【Xianchun】Rich content renderer with card, HTML channels and prompt injection."
+  },
+  "enabled_by_default": true,
+  "subpackages": [],
+  "workflow_templates": [],
+  "workspace_templates": []
+}

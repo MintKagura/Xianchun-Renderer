@@ -1,0 +1,81 @@
+衔春渲染器 / Xianchun Renderer
+Copyright 2026 Xianchun / 衔春 (矞 & 雪柳)
+
+This product includes software developed by
+Xianchun / 衔春 — 矞 & 雪柳 (Yu & Yukiyanagi).
+
+--------------------------------------------------------------------
+致谢与来源说明 / Attribution and Origins
+--------------------------------------------------------------------
+
+本项目的代码由 衔春 独立编写，未直接复制第三方源码。
+在设计构想层面，本项目参考了以下 Operit 社区插件：
+
+All code in this project is written independently by Xianchun.
+No third-party source code is copied verbatim. At the level of
+design ideas, this project referenced the following Operit
+community plugins:
+
+1. 花屋渲染器 / Garden Cottage Renderer (v1.0.0)
+   作者 / Author: liebetee
+   参考内容 / Referenced: 「聊天内 HTML 渲染」这一整体构想，
+   即通过自定义 XML 标签在对话流中插入富文本区块的思路。
+   Referenced concept: rendering HTML inline within chat by way of
+   custom XML tags.
+
+2. 渲染器 V2 / Renderer V2 (v2.0.0)
+   作者 / Author: ljrlty
+   参考内容 / Referenced: 将 Compose 卡片与 WebView 双通道
+   并置的结构安排。
+   Referenced concept: pairing a Compose-based card channel with a
+   WebView channel in one package.
+
+   说明：上述两个插件在 Operit 市场均标注「允许社区协作更新」，
+   但未附带任何开源许可证文件或版权声明。为避免许可归属不明，
+   本项目未沿用其条目，而是作为独立作品重新实现并以
+   Apache License 2.0 发布。
+   Note: both plugins are marked "open to community updates" in the
+   Operit marketplace, yet neither ships a license file or copyright
+   notice. To avoid ambiguous provenance, this project does not
+   continue their entries; it is a clean reimplementation released
+   under the Apache License 2.0.
+
+3. Moodlet (v0.1.0)
+   作者 / Author: Operit
+   参考内容 / Referenced: 通过子包 description 向 AI 下发标签
+   使用说明，从而让 AI 自行判断何时使用渲染的做法。
+   Referenced concept: delivering tag usage instructions to the AI
+   through a subpackage description, letting the model decide when
+   to render.
+
+4. 双语折叠 / Bilingual Fold (com.operit.bilingual_fold)
+   作者 / Author: Operit
+   参考内容 / Referenced: 「不自动注入提示词，改为在设置界面
+   内置可复制文本，由使用者自行取用」的设计取向；以及
+   <fold> 标签的语义约定。
+   Referenced concepts: the design stance of never auto-injecting
+   prompts, instead embedding copyable text in settings for users to
+   take as needed; and the semantics of the <fold> tag.
+
+--------------------------------------------------------------------
+第三方标签兼容 / Third-party Tag Compatibility
+--------------------------------------------------------------------
+
+本渲染器在统计正文长度时会剥离 <fold>...</fold> 区块，
+以兼容使用双语折叠插件的用户。该标签的定义归属其原作者。
+
+This renderer strips <fold>...</fold> blocks when measuring body
+length, for compatibility with users of the Bilingual Fold plugin.
+The definition of that tag belongs to its original author.
+
+--------------------------------------------------------------------
+测试文本 / Test Content
+--------------------------------------------------------------------
+
+设置界面的排版预览使用卞之琳《无题〔四〕》（1937）作为示例文本。
+该作品作者卞之琳（1910-2000），依中国著作权法其著作权保护期
+已届满，属公有领域。
+
+The typography preview in the settings screen uses "Untitled IV"
+(1937) by Bian Zhilin (1910-2000) as sample text. The work is in
+the public domain under Chinese copyright law.

@@ -1,0 +1,15 @@
+# Xianchun Renderer .gitignore
+
+# Operating System & Android Thumbnails
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+.thumb*
+.cleanOnExit/
+cleanOnExit/
+
+# Node / Packaging / Build Output (if any)
+node_modules/
+*.log
+.code_runner/
